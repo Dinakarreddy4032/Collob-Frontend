@@ -1,0 +1,18 @@
+<table>
+
+<tr ng-repeat="f in friendsList">
+
+<td ng-hide="currentUser.username==f.fromId">{{f.fromId}}</td>
+
+<td ng-hide="currentUser.username==f.toId">{{f.toId}}</td>
+
+<td   ng-hide="currentUser.username==f.fromId">
+<img src="http://localhost:8081/Collob-Backend/getimage/{{f.fromId}}" alt="Image Not Available" height="70" width="60px">
+</td>
+<td ng-hide="currentUser.username==f.toId">
+<img src="http://localhost:8081/Collob-Backend/getimage/{{f.toId}}" alt="Image Not Available" height="70" width="60px">
+</td>
+
+</tr>
+
+</table>
